@@ -1,19 +1,30 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     background-color: rgb(243, 242, 242);
 }
 
 /* NAVBAR */
 
-.container-navbar {
+.navbar-wrapper {
     background-color: whitesmoke;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.container-navbar {
     padding: 25px;
-    border-bottom: solid 1px;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
 }
 
 .container-navbar ul {
@@ -32,11 +43,12 @@ body {
 .container-navbar a {
     text-decoration: none;
     color: black;
+    transition: 0.3s ease;
+    
 }
 
-.container-navbar a:hover {
-    text-decoration: underline rgb(95, 134, 189);
-    border-bottom: blue;
+.container-navbar a:focus {
+    border-bottom: 2px solid transparent;
 }
 
 /* NAVBAR DONE */
@@ -47,25 +59,28 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
+    max-width: 1200px;
+    margin: auto;
     gap: 20px;
 }
 
 
 /* WELCOMING */
 .container-welcoming {
-padding: 50px;
-max-width:max-content;
+max-width: 500px;
 }
 
 .container-welcoming h1 {
     font-size: 40px;
-    font-weight: 150px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .container-welcoming p {
-    line-height: 30px;
+    line-height: 1.6;
     padding: 5px;
-    font-weight: 300px;
+    font-weight: 300;
+    color: #555;
 }
 
 .container-button {
@@ -76,13 +91,12 @@ max-width:max-content;
     padding: 20px;
     border-radius: 10px;
     border-style: none;
+    transition: .3s ease;
     cursor: pointer;  
 }
 
 .container-button:hover {
     background-color: rgb(22, 95, 141);
-    transition: .2s ease-in-out;
-    transition-delay: .0.5s;
 }
 /* WELCOMING DONE */
 
@@ -90,7 +104,15 @@ max-width:max-content;
 /* IMAGE */
 .profile-image {
     border-radius: 20px;
-    box-shadow: horizontal vertical blur color;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.02);
 }
 /* IMAGE DONE */
 
