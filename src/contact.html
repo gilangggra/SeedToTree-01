@@ -2,6 +2,7 @@
     <head>
         <title>CONTACT ME</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="../css/contact.css">
     </head>
     <body>
         <div class="container"></div>
@@ -10,7 +11,7 @@
          <div class="navbar-wrapper">
             <nav class="container-navbar">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="home.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -18,56 +19,69 @@
         </div>
         <!-- Navigation Bar Done -->
 
+
+
+
+
         <!-- Page -->
-        <div>
+        <div class="page-container">
             <h1>Contact Me</h1>
         </div>
         <!-- Page Done -->
 
 
 
-        <!-- Social -->
-        <div>
-            <h3>Get in Touch</h3>
-            <p>Jika ingin berkerja sama atau sekedar menyapa, silakan hubungi saya melalui form ini.</p>
-
-            <ul>
-                <li><i class="fas fa-envelope"></i> Email</li>
-                <p>goyounjung@example.com</p>
-                
-                <li><i class="fab fa-instagram"></i> Instagram</li>
-                <p><a href="https://www.instagram.com/goyounjung/" target="blank">@goyounjung</a></p>
-
-                <li><i class="fas fa-mobile"></i></li>
-                <p>+82 123-4567</p>
-            </ul>
-        </div>
-        <!-- Social Done -->
         
-        <!-- Message -->
-        <form action="" method="">
-            <!-- Nama Pengirim -->
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="nama" placeholder="Masukkan nama">
+         <div class="merger-container">
+            <!-- Social -->
+            <div class="social-container">
+                <h3>Get in Touch</h3>
+                <p class="awalan-text">Jika ingin berkerja sama atau sekedar menyapa, silakan hubungi saya melalui form ini.</p>
+
+                <ul>
+                    <li><i class="fas fa-envelope"></i> Email</li>
+                        <div>
+                            <p class="email-text">goyounjung@example.com</p>
+                        </div>
+                    
+                    <li><i class="fab fa-instagram"></i> Instagram</li>
+                        <div>
+                            <p class="instagram-container"><a  class="instagram-text" href="https://www.instagram.com/goyounjung/" target="blank">@goyounjung</a></p>
+                        </div>
+
+                    <li><i class="fas fa-mobile"></i> Management</li>
+                        <div>  
+                            <p class="management-text">+82 123-4567</p>
+                        </div>  
+                </ul>
             </div>
+            <!-- Social Done -->
+            
+            <!-- Message -->
+            <form action="" method="" class="message-container">
+                <!-- Nama Pengirim -->
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Masukkan nama">
+                </div>
 
-            <!-- Email Pengirim -->
-             <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Masukkan email">
-             </div>
+                <!-- Email Pengirim -->
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Masukkan email">
+                </div>
 
-             <!-- Pesan Pengirim -->
-              <div>
-                <label for="message">Message</label>
-                <textarea  id="pesan" placeholder="Masukkan Pesan"></textarea>
-              </div>
+                <!-- Pesan Pengirim -->
+                <div>
+                    <label for="message">Message</label>
+                    <textarea  id="message" placeholder="Masukkan Pesan"></textarea>
+                </div>
 
-            <!-- Tombol Kirim -->
-             <button>Send</button>
+                <!-- Tombol Kirim -->
+                <button class="button-container">Send</button>
 
-        </form>
-        <!-- Message Done -->
+            </form>
+            <!-- Message Done -->
+        </div>
     </body>
 </html>
